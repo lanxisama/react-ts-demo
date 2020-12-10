@@ -1,6 +1,6 @@
 // import React from 'react'
 import * as React from 'react'
- 
+import './style.css'
  
  interface isState {
   name : string

@@ -1,0 +1,28 @@
+.table{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    justify-content: space-evenly;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Item{
+    display: flex;
+    margin-top:10px ;
+    flex-direction: row;
+}
+.btn{
+    border-radius: 20%;
+    border:1px solid black;
+    margin-left: 20px;
+}
