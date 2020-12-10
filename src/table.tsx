@@ -1,6 +1,6 @@
 // import React from 'react'
 import * as React from 'react'
-  
+ 
  
  interface isState {
   name : string
@@ -109,7 +109,7 @@ isState
   render() {
     const ages: number[] = [1, 2, 3, 4, 5, 6, 7, 8];
     return (
-      <div>
+      <div className='table'>
         <header>
           <form>
             姓名:
@@ -138,13 +138,13 @@ isState
         <div className="content">
           {this.state["data"].map((i, idx) => {
             return (
-              <div>
+              <div className="Item">
                 {i.edit ? (
                   <div>
-                    <input value={this.state['editName']}
+                    姓名:<input value={this.state['editName']}
                     onChange={(ev)=>this.nameChange.call(this,ev,idx)}
                     ></input>
-                    <select
+                    年龄:<select
                     name="age"
                     value={this.state['editAge']}
                     onChange={(ev)=>this.ageChange.call(this,ev,idx)}
@@ -153,7 +153,7 @@ isState
                       return <option value={i}>{i}</option>;
                     })}
                   </select>
-                    <div onClick={()=>this.saveRow(idx)}>SaveRow</div>
+                    <span className="btn" onClick={()=>this.saveRow(idx)}>SaveRow</span>
                   </div>
                 ) : (
                   <div>

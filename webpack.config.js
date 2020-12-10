@@ -12,7 +12,11 @@ module.exports = {
     filename:'bundle.js'
   },
   module: {
-    rules: [{
+    rules: [
+      {
+        test:/\.css$/,
+        loader:'css-loader'
+      },{
       test: /\.tsx?$/,
       loader: 'awesome-typescript-loader'
     }]
